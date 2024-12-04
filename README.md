@@ -14,12 +14,6 @@
 
 ## Начало работы
 
-Аддон можно установить из assetlib или как сабмодуль если вы используете гит для хранения версий проекта
-
-```
-git add submodule https://github.com/BasilYes/godot-yandex-games-sdk.git addons/godot-yandex-games-sdk
-```
-
 Просто установите плагин и добавьте "yandex" в feature (не знаю как в переводе) к вашему экспорту (см. скрин ниже)
 
 ![Пример экспорта](https://user-images.githubusercontent.com/101056496/266880786-4838d959-b1b3-4bd3-baf3-ebdc79a511f3.png "пример экспорта")
@@ -159,5 +153,15 @@ YandexSDK.open_auth_dialog() -> void`
 ```
 
 Открывает окно авторизации игрока. Перед открытием окна выполняет проверку авторизации.
+
+
+### Получить тип устройства
+
+```gdscript
+YandexSDK.get_device_type() -> void
+```
+
+
+## Возможные возвращаемые значения : "Unknown", "desktop", "mobile", "tablet", "tv"
 
 Больше информации можно найти на [официальном сайте](https://yandex.ru/dev/games/doc/en/sdk/sdk-player).
