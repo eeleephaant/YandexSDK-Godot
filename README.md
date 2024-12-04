@@ -1,20 +1,15 @@
 [ENG](./README.en.md) [RU](./README.md)
 
-# Yandex games SDK для Godot 4.3+
-
-### Fork by eeleephaant
+# Yandex games SDK для Godot 4.3+ ***Fork by eeleephaant***
 
 ![Godot и Yandex Игры](https://user-images.githubusercontent.com/101056496/266880767-a4c872d1-180d-4424-b9f8-dfedc2731c51.png "Godot и Yandex Игры")
 
 *Неофициальная* реализация Yandex games SDK для Godot.
-Делаю для себя и своих игр, по этому тут реализованны не все методы и не всегда до конца (буду потихоньку доделывать).
-Если не хватает каких либо функций или я что-то криво сделал, можете создать ошибку (может быть я до неё дойду) или исправить и залить сюда, буду очень признателен.
-
 Протестировано на Godot 4.3stable
 
 ## Начало работы
 
-Просто установите плагин и добавьте "yandex" в feature (не знаю как в переводе) к вашему экспорту (см. скрин ниже)
+Просто установите плагин и добавьте "yandex" в Проект -> Экспортировать -> Выбрать Web -> Возможности -> Поле "Пользовательские" (см. скрин ниже)
 
 ![Пример экспорта](https://user-images.githubusercontent.com/101056496/266880786-4838d959-b1b3-4bd3-baf3-ebdc79a511f3.png "пример экспорта")
 
@@ -141,7 +136,7 @@ YandexSDK.load_leaderboard_entries(leaderboard_name: String, include_user: bool,
 ###### Проверка авторизации игрока
 
 ```gdscript
-`YandexSDK.check_is_authorized() -> void`
+YandexSDK.check_is_authorized() -> void
 ```
 
 Проверяет, авторизован ли текущий игрок. После проверки вызывает сигнал **check_auth(answer)**, где **answer** - булево значение, указывающее, авторизован ли игрок.
@@ -149,7 +144,7 @@ YandexSDK.load_leaderboard_entries(leaderboard_name: String, include_user: bool,
 ### Открыть окно авторизации
 
 ```gdscript
-YandexSDK.open_auth_dialog() -> void`
+YandexSDK.open_auth_dialog() -> void
 ```
 
 Открывает окно авторизации игрока. Перед открытием окна выполняет проверку авторизации.
