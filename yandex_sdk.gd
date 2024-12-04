@@ -11,6 +11,7 @@ signal leaderboard_player_entry_loaded(data)
 signal leaderboard_entries_loaded(data)
 signal stats_loaded(stats: Dictionary)
 signal check_auth(answer: bool)
+signal device_type(type: String)
 
 
 var is_game_initialized : bool = false
@@ -136,6 +137,13 @@ func gameplay_stopped() -> void:
 		await game_initialized
 	window.GameplayStopped()
 
+func get_device_type():
+	if not OS.has_feature("yandex"):
+		return "Unknown"
+	if not is_game_initialized:
+		init_game()
+		await game_initialized
+	emit_signal("device_type", window.GetDeviceType())
 
 func show_interstitial_ad() -> void:
 	if not OS.has_feature("yandex"):
