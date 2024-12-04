@@ -160,8 +160,8 @@ YandexSDK.open_auth_dialog() -> void`
 ```gdscript
 YandexSDK.get_device_type() -> void
 ```
+Возможные возвращаемые значения в сигнале : "Unknown", "desktop", "mobile", "tablet", "tv"
 
 
-## Возможные возвращаемые значения : "Unknown", "desktop", "mobile", "tablet", "tv"
 
 Больше информации можно найти на [официальном сайте](https://yandex.ru/dev/games/doc/en/sdk/sdk-player).
