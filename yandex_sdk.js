@@ -67,6 +67,10 @@ function GameplayStopped() {
 	console.log("Gameplay stopped (js)");
 }
 
+function GetDeviceType() {
+	return ysdk.deviceInfo.type
+}
+
 // Leader boards
 var lb;
 function InitLeaderboard(callback) {
