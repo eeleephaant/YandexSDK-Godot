@@ -1,6 +1,7 @@
 [ENG](./README.en.md) [RU](./README.md)
 
-# Yandex games SDK для Godot 4.3+ ***Fork by eeleephaant***
+# Yandex games SDK для Godot 4.3+ 
+#***Fork by eeleephaant***
 
 ![Godot и Yandex Игры](https://user-images.githubusercontent.com/101056496/266880767-a4c872d1-180d-4424-b9f8-dfedc2731c51.png "Godot и Yandex Игры")
 
