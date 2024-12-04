@@ -11,8 +11,7 @@
 ## Начало работы
 
 Просто установите плагин и добавьте "yandex" в Проект -> Экспортировать -> Выбрать Web -> Возможности -> Поле "Пользовательские" (см. скрин ниже)
-
-![Пример экспорта](https://user-images.githubusercontent.com/101056496/266880786-4838d959-b1b3-4bd3-baf3-ebdc79a511f3.png "пример экспорта")
+![Пример экспорта](https://github.com/eeleephaant/YandexSDK-Godot/blob/main/Godot_42w6ubuDuT.png)
 
 ## Методы
 
